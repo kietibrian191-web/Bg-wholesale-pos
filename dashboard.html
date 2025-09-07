@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BG Wholesale POS - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>BG Wholesale POS</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <section id="products">
+      <h2>Products</h2>
+      <button onclick="addProduct()">Add Product</button>
+      <ul id="productList"></ul>
+    </section>
+
+    <section id="sales">
+      <h2>New Sale</h2>
+      <select id="saleProduct"></select>
+      <input type="number" id="saleQty" placeholder="Quantity" />
+      <button onclick="makeSale()">Sell</button>
+      <p id="saleMsg"></p>
+    </section>
+
+    <section id="reports">
+      <h2>Daily Sales</h2>
+      <p>Total: <span id="dailyTotal">KES 0</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
